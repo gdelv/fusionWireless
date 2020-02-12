@@ -1,0 +1,70 @@
+import React from 'react'
+import './Footer.css'
+import { FaTwitter } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa'
+import { FaInstagram } from 'react-icons/fa'
+
+
+
+const Footer = () => {
+
+    return (
+
+        <div className='footer-wrapper'>
+            <div className='background'>
+                <div className='top-container'>
+                    <img className='logo' src='https://www.fusionwireless.com/wordpress/wp-content/themes/html5blank-stable/img/logo-att.png'></img>
+                    <h3>MOBILIZING YOUR WORLD</h3>
+                    <p>Fusion Wireless has been a leader in wireless communications since 1993 and is committed to offering our customers a wide range of products.</p>
+                    <br></br>
+                    <a className='link'>EMPLOYEE LINK</a>
+
+                </div>
+                <div className='logo-container'>
+                    <FaTwitter
+                        color='white'
+                        size='3em'
+                    />
+                    <FaFacebookF
+                        color='white'
+                        size='3em'
+                    />
+                    <FaInstagram
+                        color='white'
+                        size='3em'
+                    />
+
+
+                </div>
+                <div className='menu-container'>
+
+                    <li><a>Home</a></li>
+                    <li><p>/</p></li>
+                    <li><a>Store Locator</a></li>
+                    <li><p>/</p></li>
+                    <li><a>Careers</a></li>
+                    <li><p>/</p></li>
+                    <li><a>Corporate Sales</a></li>
+                    <li><p>/</p></li>
+                    <li><a>Contact Us</a></li>
+                    <li><p>/</p></li>
+                    <li><a>Employees</a></li>
+
+                </div>
+                <div className='copyright'>
+                    <h2>(877) 933-2355 </h2>
+                    <h2>info@fusionwireless.com</h2>
+                    <p>2020 © Fusion Wireless. All rights reserved. Design by MES</p>
+                    <p>AT&T, the AT&T logo and all other AT&T marks contained herein are trademarks of AT&T Intellectual Property and/or AT&T affiliated companies. AT&T 36USC220506. </p>
+                    <img src='https://www.fusionwireless.com/wordpress/wp-content/themes/html5blank-stable/img/logo-fusion-wireless-white.png'/>
+
+
+                </div>
+
+            </div>
+        </div>
+    )
+}
+
+
+export default Footer 

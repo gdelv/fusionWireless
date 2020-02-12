@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './shared/Nav'
+import Footer from './shared/Footer'
 import { Routes } from './routes'
 
 class App extends React.Component {
@@ -11,19 +12,17 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <header>
-          {/* NAV */}
-          <Nav />
-        </header>
-        
-        <main>
-          {/* ROUTES */}
+      <header>
+      <Nav/>
+      </header>
+      
+      <main>
           <Routes/>
-        </main>
-
-        <footer>
-          {/* FOOTER */}
-        </footer>
+      </main>
+  
+      <footer>
+        <Footer/>
+      </footer>
 
       </>
     )
