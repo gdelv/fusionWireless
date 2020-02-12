@@ -99,6 +99,10 @@ nav {
 }
 
 /* CAREERS PAGE */
+.careers-container {
+  position: relative;
+  /* top: 20vh; */
+}
 
 .careers-container h2 {
   position: relative;
@@ -107,6 +111,7 @@ nav {
   margin: 0em;
   text-align: center;
   font-weight: 700;
+  color: black;
   /* border: 1px solid red; */
 }
 
@@ -115,7 +120,7 @@ nav {
   /* top: 20vh; */
   margin: 0 1em;
   padding: .5em 0em;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid lightgray;
 }
 
 .job-card a {
@@ -148,14 +153,14 @@ nav {
   text-align: center;
   top: 15vh;
   margin: 0em;
+  /* border: 1px solid red; */
 }
 .corporate-sales-container p {
   padding: 1em;
+  font-size: 16px;
+
 }
 
-.corporate-sales-container p {
-  font-size: 16px;
-}
 
 .form-container {
   background-image: url('./images/corp-background.jpg');
@@ -165,8 +170,3 @@ nav {
 .form-container h3 {
   padding-top: 2em;
 }
-
-/* .corp-pic {
-  display: inline;  
-  position: relative;
-} */
