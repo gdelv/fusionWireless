@@ -30,7 +30,7 @@ nav {
   text-align: center;
   /* border: 1px solid black; */
   background-color: black;
-  z-index: 1000;
+  z-index: 9000;
 }
 
 
@@ -169,4 +169,90 @@ nav {
 }
 .form-container h3 {
   padding-top: 2em;
+}
+/* CAROUSEL */
+
+.carousel {
+  /* position: relative; */
+  /* top: 12vh; */
+  /* min-height: 88vh; */
+  /* border: 1px solid red; */
+}
+
+.carousel img {
+  min-height: 100vh;
+  max-width: 100%;
+}
+.thumbs-wrapper {
+  display: none;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 1px solid green;
+}
+
+.carousel-overlay {
+  position: relative;
+  top: -100vh;
+  min-height: 100vh;
+  background-color: black;
+  opacity: .4;
+  z-index: 999;
+}
+
+.store-pic {
+  position: relative;
+  width: 100%;
+  height: 275px;
+  top: -130vh;
+}
+
+main {
+  min-height: 1500px;
+  max-height: 1500px;
+}
+
+.about h2 {
+  color: #019edb;
+  font-size: 26px;
+  font-weight: 800;
+  text-align: center;
+  left: 5%;
+  width: 90%;
+
+}
+.about p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: start;
+  line-height: 25px;
+  color: black;
+}
+.about {
+  max-height: 80px;
+  position: relative;
+  top: -130vh;
+  z-index: 2000;
+  color: white;
+}
+.att-landing-logo {
+  /* display: inline; */
+  left: 20%;
+  max-height: 80px;
+  width: 60%;
+  position: relative;
+  top: -140vh;
+  z-index: 2000;
+}
+
+.landing-para {
+  left: 5%;
+  max-height: 80px;
+  width: 90%;
+  position: relative;
+  top: -138vh;
+  z-index: 2000;
+  color: white;
+  font-size: 18px;
+  text-align: center;
 }
