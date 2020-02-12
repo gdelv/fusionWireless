@@ -3,6 +3,7 @@ import './Footer.css'
 import { FaTwitter } from 'react-icons/fa'
 import { FaFacebookF } from 'react-icons/fa'
 import { FaInstagram } from 'react-icons/fa'
+const attLogo = require('../images/att-logo.png')
 
 
 
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className='footer-wrapper'>
             <div className='background'>
                 <div className='top-container'>
-                    <img className='logo' alt='logo' src='https://www.fusionwireless.com/wordpress/wp-content/themes/html5blank-stable/img/logo-att.png'></img>
+                    <img className='att-logo' alt='att-logo' src={attLogo}></img>
                     <h3>MOBILIZING YOUR WORLD</h3>
                     <p>Fusion Wireless has been a leader in wireless communications since 1993 and is committed to offering our customers a wide range of products.</p>
                     <br></br>
