@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './shared/Nav'
+import Footer from './shared/Footer'
 class App extends React.Component {
   state = {
 
@@ -18,7 +19,7 @@ class App extends React.Component {
       </main>
   
       <footer>
-        {/* FOOTER */}
+        <Footer/>
       </footer>
   
       </>
