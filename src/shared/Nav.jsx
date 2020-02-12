@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
-import { Button } from "../shared/Button";
+// import { Button } from "../shared/Button";
 
 const logoPic = require('../images/logo-fusion-wireless.png')
 
@@ -13,12 +13,20 @@ class Nav extends React.Component {
         this.state = {
             modal: false,
             title: "hamburger",
-            opacity: .8
+            opacity: .8,
+            buttonClassName: 'circle icon'
         }
     }
     // componentDidMount() {
     //     this.renderIcon()
     // }
+    changeClassName = () => {
+        if(this.state.buttonClassName === 'circle icon') {
+            this.setState({ buttonClassName: 'circle icon close' })
+        }else if(this.state.buttonClassName === 'circle icon close') {
+            this.setState({ buttonClassName: 'circle icon' })
+        }
+    }
     changeTitle = () => {
         if (this.state.title === 'hamburger') {
             console.log('close')
@@ -48,7 +56,7 @@ class Nav extends React.Component {
     handleModal() {
         this.changeOpacity()
         this.changeTitle()
-        // this.renderIcon()
+        this.changeClassName()
         this.setState({
             modal: !this.state.modal,
         })
@@ -88,11 +96,18 @@ class Nav extends React.Component {
                 <NavLink exact to='/'>
                     <img src={logoPic} className='logo' alt='logo' />
                 </NavLink>
-                <Button
+                {/* <Button
                     title={this.state.title}
                     className='open-modal'
                     onClick={() => this.handleModal()}
-                />
+                /> */}
+                <div id='wrapper' onClick={()=> this.handleModal()}>
+                    <div className={this.state.buttonClassName}>
+                        <span className='line top'></span>
+                        <span className='line middle'></span>
+                        <span className='line bottom'></span>
+                    </div>
+                </div>
             </nav>
         )
     }
