@@ -6,21 +6,22 @@ class App extends React.Component {
 
   }
 
-  render () {
-    return(
+  render() {
+    return (
       <>
-      <header>
-  {/* NAV */}
-  <Nav/>
-      </header>
-      <main>
-        {/* ROUTES */}
-      </main>
-  
-      <footer>
-        {/* FOOTER */}
-      </footer>
-  
+        <header>
+          {/* NAV */}
+          <Nav />
+        </header>
+        
+        <main>
+          {/* ROUTES */}
+        </main>
+
+        <footer>
+          {/* FOOTER */}
+        </footer>
+
       </>
     )
   }
