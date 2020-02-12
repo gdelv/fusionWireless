@@ -16,3 +16,10 @@ nav {
   max-width: 75px;
   padding: .1em 0em 0em .5em;
 }
+
+.modal {
+  height: 50px;
+  position: fixed;
+  top: 12vh;
+
+}
