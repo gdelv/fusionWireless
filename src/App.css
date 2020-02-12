@@ -137,7 +137,36 @@ nav {
   top: 20vh;
   min-height: 350px;
   max-height: 350px;
-  /* border: 1px solid red; */
+  /* border: 5px solid red; */
   overflow: auto;
-  margin: 0em 1em;
+  margin: 0em;
+  padding: 0 1em;
 }
+
+.corporate-sales-container {
+  position: relative;
+  text-align: center;
+  top: 15vh;
+  margin: 0em;
+}
+.corporate-sales-container p {
+  padding: 1em;
+}
+
+.corporate-sales-container p {
+  font-size: 16px;
+}
+
+.form-container {
+  background-image: url('./images/corp-background.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+.form-container h3 {
+  padding-top: 2em;
+}
+
+/* .corp-pic {
+  display: inline;  
+  position: relative;
+} */
