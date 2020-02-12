@@ -1,8 +1,6 @@
 import React from 'react'
 import { NavLink } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdClose } from "react-icons/io";
-// import { Button } from "../shared/Button";
+
 
 const logoPic = require('../images/logo-fusion-wireless.png')
 
@@ -12,14 +10,10 @@ class Nav extends React.Component {
 
         this.state = {
             modal: false,
-            title: "hamburger",
             opacity: .8,
             buttonClassName: 'circle icon'
         }
     }
-    // componentDidMount() {
-    //     this.renderIcon()
-    // }
     changeClassName = () => {
         if(this.state.buttonClassName === 'circle icon') {
             this.setState({ buttonClassName: 'circle icon close' })
@@ -27,24 +21,6 @@ class Nav extends React.Component {
             this.setState({ buttonClassName: 'circle icon' })
         }
     }
-    changeTitle = () => {
-        if (this.state.title === 'hamburger') {
-            console.log('close')
-            this.setState({ title: "close" })
-        } else if (this.state.title === "close") {
-            console.log('open')
-            this.setState({ title: "hamburger" })
-        }
-    }
-
-    renderIcon = () => {
-        if(this.state.title === 'hamburger') {
-        this.setState({ title: <GiHamburgerMenu/> })
-        } else if (this.state.title === <GiHamburgerMenu/>) {
-            this.setState({ title: <IoMdClose/> })
-        }
-    }
-
     changeOpacity = () => {
         if (this.state.opacity === .8) {
             this.setState({ opacity: 1 })
@@ -55,7 +31,6 @@ class Nav extends React.Component {
 
     handleModal() {
         this.changeOpacity()
-        this.changeTitle()
         this.changeClassName()
         this.setState({
             modal: !this.state.modal,
@@ -96,11 +71,6 @@ class Nav extends React.Component {
                 <NavLink exact to='/'>
                     <img src={logoPic} className='logo' alt='logo' />
                 </NavLink>
-                {/* <Button
-                    title={this.state.title}
-                    className='open-modal'
-                    onClick={() => this.handleModal()}
-                /> */}
                 <div id='wrapper' onClick={()=> this.handleModal()}>
                     <div className={this.state.buttonClassName}>
                         <span className='line top'></span>
