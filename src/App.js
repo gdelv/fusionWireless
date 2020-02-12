@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Nav from './shared/Nav'
+import { Routes } from './routes'
+
 class App extends React.Component {
   state = {
 
@@ -16,6 +18,7 @@ class App extends React.Component {
         
         <main>
           {/* ROUTES */}
+          <Routes/>
         </main>
 
         <footer>
