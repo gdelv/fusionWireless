@@ -2,26 +2,28 @@ import React from 'react';
 import './App.css';
 import Nav from './shared/Nav'
 import Footer from './shared/Footer'
+import { Routes } from './routes'
+
 class App extends React.Component {
   state = {
 
   }
 
-  render () {
-    return(
+  render() {
+    return (
       <>
       <header>
-  {/* NAV */}
-  <Nav/>
+      <Nav/>
       </header>
+      
       <main>
-        {/* ROUTES */}
+          <Routes/>
       </main>
   
       <footer>
         <Footer/>
       </footer>
-  
+
       </>
     )
   }
