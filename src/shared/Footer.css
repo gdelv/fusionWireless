@@ -25,9 +25,43 @@
 .logo-container svg {
     /* color: white; */
 }
+.menu-container {
+    list-style: none;
+    color: white;
+    margin: .6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: 1.1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-container li {
+    /* padding: 0px 10px; */
+}
+
+.menu-container li p {
+    font-size: 1em;
+}
 
 h3 {
     color: #00aeef;
+}
+
+h2 {
+    color: #ff7200
+
+}
+
+.copyright p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.copyright img {
+    padding: 20px 0px 50px;
+    width: 50%;
 }
 
 p {
