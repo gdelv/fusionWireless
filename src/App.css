@@ -1,38 +1,172 @@
-.App {
-  text-align: center;
+nav {
+  /* border: 1px solid red; */
+  display: flex;
+  height: 12vh;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  z-index: 1001;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  min-height: 70px;
+  /* max-height: 75px; */
+  min-width: 125px;
+  max-width: 75px;
+  padding: .1em 0em 0em .5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.modal {
+  height: 88vh;
+  width: 100%;
+  position: fixed;
+  top: 12vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-start;
+  text-align: center;
+  /* border: 1px solid black; */
+  background-color: black;
+  z-index: 1000;
+}
+
+
+.modal a {
+  text-decoration: none;
   color: white;
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: .1px solid darkgray;
+  padding: .5em 0;
+  text-transform: capitalize;
 }
 
-.App-link {
-  color: #61dafb;
+.modal a:hover {
+  color: darkgray
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#employees-link { 
+  color: orange;
 }
+
+#employees-link:hover {
+  color: darkgray
+}
+
+/* HAMBURGER BUTTON STYLE */
+#wrapper {
+	background:black;
+  display:inline-block;
+  border: .5px solid #03aadd;
+	border-radius:10px;
+	margin:10px;
+	position: relative;
+  padding:10px;
+	cursor:pointer;
+}
+.circle {
+	width:30px;
+	height:30px;
+	position:relative;
+}
+.line {
+	position: absolute;
+	height: 5px;
+	width:100%;
+	background:white;
+	border-radius:8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+}
+.top {
+	top:18%;
+}
+.middle {
+	top:48%;
+}
+.bottom {
+	top:78%;
+}
+.icon.close .top {
+	transform:rotate(45deg);
+	top:48%;
+}
+.icon.close .middle, .icon.close .bottom {
+	transform:rotate(-45deg);
+	top:48%;
+}
+
+/* CAREERS PAGE */
+
+.careers-container h2 {
+  position: relative;
+  top: 17vh;
+  padding: 0em;
+  margin: 0em;
+  text-align: center;
+  font-weight: 700;
+  /* border: 1px solid red; */
+}
+
+.job-card {
+  position: relative;
+  /* top: 20vh; */
+  margin: 0 1em;
+  padding: .5em 0em;
+  border-bottom: 1px solid black;
+}
+
+.job-card a {
+  text-decoration: none;
+  color: #019edb;
+  font-weight: 600;
+}
+
+.job-card a, h5 {
+  margin: 0em;
+}
+
+.job-card h5 {
+  margin-top: .2em;
+}
+
+.job-container {
+  position: relative;
+  top: 20vh;
+  min-height: 350px;
+  max-height: 350px;
+  /* border: 5px solid red; */
+  overflow: auto;
+  margin: 0em;
+  padding: 0 1em;
+}
+
+.corporate-sales-container {
+  position: relative;
+  text-align: center;
+  top: 15vh;
+  margin: 0em;
+}
+.corporate-sales-container p {
+  padding: 1em;
+}
+
+.corporate-sales-container p {
+  font-size: 16px;
+}
+
+.form-container {
+  background-image: url('./images/corp-background.jpg');
+  background-position: bottom;
+  background-size: cover;
+}
+.form-container h3 {
+  padding-top: 2em;
+}
+
+/* .corp-pic {
+  display: inline;  
+  position: relative;
+} */
