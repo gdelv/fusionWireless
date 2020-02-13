@@ -1,11 +1,14 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
-import StoreInfo from './components/StoreInfo'
+import StoreInfo from '../shared/StoreInfo'
+import FindStore from './FindStore'
 
 
 const mapStyles = {
-    width: '50em',
-    height: '50em',
+    width: '100%',
+    height: '100%',
+    position: 'relative'
+    
 };
 
 class MapContainer extends React.Component {
@@ -14,8 +17,8 @@ class MapContainer extends React.Component {
 
         this.state = {
             stores: [
-                { lat: 47.49855629475769, lng: -122.14184416996333, name: 'Fusion Wireless', address: '53 Main St. Port Washington, NY 11050', number: '(516) 944-9800)' },
-                { latitude: 47.359423, longitude: -122.021071, name: 'Fusion Wireless', address: '376 Plandome Rd, Manhasset,NY 11030', number: '(516) 439-4300)' },
+                { lat: 47.49855629475769, lng: -122.14184416996333, name: 'Fusion Wireless', address: '53 Main St. Port Washington, NY 11050', number: '(516) 944-9800' },
+                { latitude: 47.359423, longitude: -122.021071, name: 'Fusion Wireless', address: '376 Plandome Rd, Manhasset,NY 11030', number: '(516) 439-4300' },
                 { latitude: 47.2052192687988, longitude: -121.988426208496, name: 'Fusion Wireless', address: '1709 Crosby Avenue Bronx, NY 10461', number: '(718) 822-5522' },
                 { latitude: 47.6307081, longitude: -122.1434325, name: 'Fusion Wireless', address: '132-18 14th Ave. College Point, NY 11356', number: '(917) 563-7995' },
                 { latitude: 47.3084488, longitude: -122.2140121, name: 'Fusion Wireless', address: '94 Market St.Yonkers, NY 10710 (914) 346-8787', number: '(914) 346-8787' },
@@ -56,7 +59,8 @@ class MapContainer extends React.Component {
 
     render() {
         return (
-            <>
+            <div className='map-container'>
+                <FindStore/>
                 <Map
                     google={this.props.google}
                     zoom={8}
@@ -69,7 +73,7 @@ class MapContainer extends React.Component {
                     {this.displayStores()}
 
                 </div>
-            </>
+            </div>
         );
     }
 }

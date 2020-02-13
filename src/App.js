@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './shared/Nav'
 import Footer from './shared/Footer'
 import { Routes } from './routes'
-import MapContainer from './components/Map'
+
 
 class App extends React.Component {
   state = {
@@ -18,13 +18,12 @@ class App extends React.Component {
       </header>
       
       <main>
-          {/* <Routes/> */}
-          <MapContainer/>
+          <Routes/>
       </main>
       
   
       <footer>
-        {/* <Footer/> */}
+        <Footer/>
       </footer>
 
       </>

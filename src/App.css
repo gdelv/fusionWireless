@@ -6,7 +6,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   z-index: 1001;
 }
@@ -255,4 +255,98 @@ main {
   color: white;
   font-size: 18px;
   text-align: center;
+}
+
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30vh;
+  height: 110vh;
+  border-bottom: solid 1px lightgrey;
+}
+
+.map-container div:nth-child(2) {
+  position: relative !important;
+}
+
+
+.store-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: scroll;
+}
+
+.store-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  margin: .5em 0;
+  padding: .5em;
+  border-radius: .5em;
+  border: solid 1px lightgrey;
+
+}
+
+.store-card p {
+  font-size: 14px;
+  padding: 0px;
+  color: black;
+}
+
+.store-card a {
+  color: #009edb
+}
+
+.find-store-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.find-store-container div:nth-child(2) {
+  /* border: 2px solid lightgrey; */
+  display: flex;
+  flex-direction: column;
+  background: #ebebeb;
+  padding: 30px;
+}
+.find-button {
+  border: 1px solid #fff;
+  padding: 5px 25px;
+  font-size: 18px;
+  background: rgb(255, 114, 0);
+  color: #fff;
+  margin-bottom: 1em;
+}
+.find-store-container p {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  color: black;
+  margin-top: 10px;
+  margin-left: -1em;
+
+}
+
+.find-store-container select {
+  margin-bottom: 2em;
+}
+
+
+.search-bar {
+
+  padding: 8px;
+  border: 1px solid white;
+}
+
+.find-store-container h1 {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  border-top: 1px solid lightgrey;
+  padding-top: .5em;
 }
