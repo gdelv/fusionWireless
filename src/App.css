@@ -6,7 +6,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(0, 0, 0);
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   z-index: 1001;
 }
@@ -208,8 +208,8 @@ nav {
 }
 
 main {
-  min-height: 1500px;
-  max-height: 1500px;
+  /* min-height: 1500px; */
+  /* max-height: 1500px; */
 }
 
 .about h2 {
