@@ -1,5 +1,6 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker } from 'google-maps-react'
+import StoreInfo from './components/StoreInfo'
 
 
 const mapStyles = {
@@ -41,7 +42,13 @@ class MapContainer extends React.Component {
 
     displayStores = () => {
         return this.state.stores.map((store, index) => {
-            return <div key={index}
+            return <div className='store-card' key={index}>
+                <StoreInfo
+                    name={store.name}
+                    address={store.address}
+                    number={store.number}
+                />
+            </div>
         })
     }
 
@@ -58,7 +65,8 @@ class MapContainer extends React.Component {
                 >
                     {this.displayMarkers()}
                 </Map>
-                <div>
+                <div className='store-card-container'>
+                    {this.displayStores()}
 
                 </div>
             </>
