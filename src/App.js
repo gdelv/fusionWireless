@@ -4,6 +4,7 @@ import Nav from './shared/Nav'
 import Footer from './shared/Footer'
 import { Routes } from './routes'
 
+
 class App extends React.Component {
   state = {
 
@@ -19,6 +20,7 @@ class App extends React.Component {
       <main>
           <Routes/>
       </main>
+      
   
       <footer>
         <Footer/>
