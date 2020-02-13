@@ -30,9 +30,9 @@ footer {
     padding-bottom: 4em;
     border-bottom: 2px solid grey;
 }
-.logo-container svg {
+/* .logo-container svg {
     /* color: white; */
-}
+
 .menu-container {
     list-style: none;
     color: white;

@@ -36,9 +36,26 @@
     width: 70%;
     position: relative;
     top: 0vh;
-    z-index: 2000;
     background-color: #03aadd;
     color: white;
     border: none;
     font-size: 18px;
+}
+
+.animatedPics-button {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    background-color: #ff7200;
+    width: fit-content;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    top: -51vh;
+    display: block;
+    padding: 0em 1em;
+    margin: 0 auto;
+    /* left: 25%; */
 }
