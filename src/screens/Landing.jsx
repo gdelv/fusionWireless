@@ -8,7 +8,6 @@ class Landing extends React.Component {
     super();
     this.state = {};
   }
-
   render() {
     return (
       <>
@@ -31,8 +30,7 @@ class Landing extends React.Component {
             with your purchase, bring it back. If you're not completely
             satisfied, neither are we. 
             </p>
-            <p>
-Let us know how we can better serve you.
+            <p>Let us know how we can better serve you.
             Give us a call today at 877-933-CELL and see what we can do for you!
           </p>
           <Button

@@ -9,7 +9,7 @@ const StoreInfo = (props) => {
             <h5>{props.name}</h5>
             <p>{props.address}</p>
             <p>{props.number}</p>
-            <a>Directions</a>
+            <a href='/'>Directions</a>
         </>
     )
 }
