@@ -1,4 +1,4 @@
-This project was worked in collaboration to improve our wed development skills
+This project was worked in collaboration to improve our web development skills
 
 
 
